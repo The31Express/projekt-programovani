@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výlety po Česku - Kontakt</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="nahoru">
+    <header>
+        <h1>Výlety po Česku</h1>
+        <p>Objevuj zajímavá místa v naší zemi.</p>
+        <nav>
+            <a href="index.html">Domů</a>
+            <a href="obsah.html">Tipy na výlety</a>
+            <a class="aktivni" href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Napiš nám</h2>
+            <p>Máš vlastní tip na výlet nebo se chceš na něco zeptat? Vyplň formulář.</p>
+
+            <form>
+                <label for="jmeno">Jméno:</label>
+                <input type="text" id="jmeno" name="jmeno" required minlength="2" maxlength="40">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="zprava">Zpráva:</label>
+                <textarea id="zprava" name="zprava" rows="5" required minlength="10" maxlength="500"></textarea>
+
+                <button type="submit">Odeslat</button>
+            </form>
+            <p class="poznamka">Formulář je pouze ukázkový. Zprávy se zatím nikam neodesílají.</p>
+        </section>
+
+        <section>
+            <h2>Kde nás najdeš</h2>
+            <ul>
+                <li>E-mail: info@vyletypo-cesku.cz</li>
+                <li>Telefon: 123 456 789</li>
+                <li>Adresa: Náměstí 1, Brno</li>
+            </ul>
+
+            <h3>Orientační mapa</h3>
+            <img class="mapa" src="images/mapa.svg" alt="Jednoduchá orientační mapa s vyznačeným bodem v Brně">
+            <p>Mapa je jen jednoduchý orientační obrázek, neukazuje přesnou adresu.</p>
+        </section>
+
+        <p><a href="#nahoru">Zpět nahoru</a></p>
+        <p><a href="https://www.kudyznudy.cz/" target="_blank" rel="noopener">Další inspirace na výlety na webu Kudy z nudy</a></p>
+    </main>
+
+    <footer>
+        <p>© 2026 Výlety po Česku</p>
+    </footer>
+</body>
+</html>

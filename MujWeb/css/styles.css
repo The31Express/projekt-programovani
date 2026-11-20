@@ -1,0 +1,221 @@
+/* Jednoduché styly pro všechny tři stránky */
+
+:root {
+    --hlavni-barva: #386641;
+    --svetle-pozadi: #f2f5ee;
+    --tmavy-text: #263326;
+    --bila-barva: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--tmavy-text);
+    background-color: var(--svetle-pozadi);
+}
+
+header {
+    background-color: var(--hlavni-barva);
+    color: var(--bila-barva);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: var(--bila-barva);
+    text-decoration: none;
+    padding: 8px 14px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.aktivni {
+    background-color: #ffffff;
+    color: var(--hlavni-barva);
+}
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: var(--bila-barva);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--hlavni-barva);
+}
+
+.uvodni-blok {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.tlacitko,
+button {
+    display: inline-block;
+    background-color: var(--hlavni-barva);
+    color: var(--bila-barva);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tlacitko:hover,
+button:hover,
+.tlacitko:focus,
+button:focus {
+    background-color: #233f29;
+    text-decoration: underline;
+}
+
+.hlavni-obrazek {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.mrizka {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.karta {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: #fafafa;
+}
+
+.karta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.karta h3 {
+    margin-bottom: 5px;
+    color: var(--hlavni-barva);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #999999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--hlavni-barva);
+    color: var(--bila-barva);
+}
+
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #a7c957;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #999999;
+}
+
+.poznamka {
+    font-size: 14px;
+}
+
+footer {
+    background-color: var(--hlavni-barva);
+    color: var(--bila-barva);
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .mrizka {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobil */
+@media (max-width: 500px) {
+    .mrizka {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px auto;
+        max-width: 220px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

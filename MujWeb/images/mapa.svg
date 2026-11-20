@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="350" viewBox="0 0 600 350">
+  <rect width="600" height="350" fill="#e7f0df"/>
+  <path d="M0 80 C120 40 170 130 280 90 S450 40 600 100" fill="none" stroke="#9bc4df" stroke-width="18"/>
+  <path d="M30 300 L160 220 L260 250 L370 150 L550 190" fill="none" stroke="#ffffff" stroke-width="12"/>
+  <path d="M30 300 L160 220 L260 250 L370 150 L550 190" fill="none" stroke="#c6a66b" stroke-width="3"/>
+  <path d="M80 30 L130 110 L220 160 L300 240 L470 310" fill="none" stroke="#ffffff" stroke-width="10"/>
+  <path d="M80 30 L130 110 L220 160 L300 240 L470 310" fill="none" stroke="#c6a66b" stroke-width="3"/>
+  <circle cx="320" cy="190" r="13" fill="#c0392b" stroke="#ffffff" stroke-width="4"/>
+  <text x="340" y="195" font-family="Arial" font-size="22" fill="#263326">Brno</text>
+  <text x="20" y="330" font-family="Arial" font-size="15" fill="#52634f">Orientační mapa</text>
+</svg>
